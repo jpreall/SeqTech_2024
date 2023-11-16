@@ -84,8 +84,21 @@ Or on the cloud:
 blah blah STARsolo CellSNP  
 
 ## <a name="section4"> Combining samples with `cellranger aggr`</a>
-Let's combine both replicate lanes into a unified data matrix.  
-Be careful not to accidentally bait a computational bologist into discussing the relative merits of the many different strategies for aggregating multiple data sets.  You will have to gnaw your foot off before they finally get to the punchline: 
-*there is no single best way to jointly analyze multiple datasets*
+The two replicate 10X channels were combined into a single unified data matrix using `cellranger aggr`  
+Cellranger provides two normalization options for doing this:  
+  - `Normalize=none`
+  	- *simply concatenates the matrices together with no modifications*
+  - `Normalize=mapped`
+  	- *downsamples more deeply sequenced samples to approximately match number of mapped reads-per-cell to the worst sample in the data*
 
-10X Genomics has decided to sidestep the issue by providing a simple data aggregation pipeline that takes a conservative approach as a first step, and leaving the more sophisticated steps in your capable hands.  `cellranger aggr` combines two or more datasets by randomly downsampling (discarding) reads from the richer datasets, until all samples have approximately the same median number of reads per cell.  This helps mitigate one of the simplest and easy to fix batch-effects caused by sequencing depth, but will not correct for the zillions of other variables that injected unintended variation to your samples. 
+We used `Normalize=none` here, because it seems to be the most commonly used strategy in the wild
+
+---
+## Download the data from Jon's Instance
+```
+JP=3.88.64.100
+wget http://$JP/workspace/SingleCell.tar.gz
+tar -zxvf SingleCell.tar.gz
+```
+
+  
