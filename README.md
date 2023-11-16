@@ -70,7 +70,6 @@ cellranger mkfastq \
 ## Single Cell Dry Lab
 
 
-
 ### Mapping and "Primary" Analysis using Cellranger
 Mapping and transcript counting are carried out using the `cellranger count` pipeline.  In parallel, V(D)J analysis can be carried out with the `cellranger vdj` command. *This is not meant to be run on your personal laptop.* It is an intensive, memory-hungry Linux application that is built to run on high-performance workstations or clusters. For the purposes of this course, the Cellranger steps will be carried out ahead of time before our interactive session, partly because it takes several hours to complete.  
 
@@ -83,7 +82,7 @@ Or on the cloud:
 ### Bulk RNA-seq Library Analysis for Demux  
 blah blah STARsolo CellSNP  
 
-## <a name="section4"> Combining samples with `cellranger aggr`</a>
+### <a name="section4"> Combining samples with `cellranger aggr`</a>
 The two replicate 10X channels were combined into a single unified data matrix using `cellranger aggr`  
 Cellranger provides two normalization options for doing this:  
   - `Normalize=none`
