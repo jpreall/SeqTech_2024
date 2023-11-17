@@ -95,7 +95,7 @@ We used `Normalize=none` here, because it seems to be the most commonly used str
 ---
 ## Download the data from Jon's Instance
 ```
-JP=3.88.64.100
+JP=3.86.4.253
 wget http://$JP/workspace/SingleCell.tar.gz
 tar -zxvf SingleCell.tar.gz
 ```
