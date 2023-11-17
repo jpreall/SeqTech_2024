@@ -103,6 +103,8 @@ tar -zxvf SingleCell.tar.gz
 ## Install the packages I forgot to have pre-installed
 ```
 source activate scRNAseq_env
-
+pip install celltypist
+ip install ipywidgets
+pip install gseapy
 ```
   
