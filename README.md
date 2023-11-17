@@ -97,7 +97,7 @@ We used `Normalize=none` here, because it seems to be the most commonly used str
 ```
 JP=3.86.4.253
 cd /workspace/
-wget http://$JP/workspace/SingleCell.tar.gz
+wget http://$JP/SingleCell.tar.gz
 tar -zxvf SingleCell.tar.gz
 ```
 
