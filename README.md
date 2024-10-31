@@ -30,7 +30,7 @@ Demultiplexing strategy schematic:
 - [cellsnp-lite](https://cellsnp-lite.readthedocs.io/en/latest/#)  
 - [vireo](https://vireosnp.readthedocs.io/en/latest/)
   
-Note: there are many options we could have used here. An excellent meta-package called [Demuxafy](https://demultiplexing-doublet-detecting-docs.readthedocs.io/en/latest/index.html) has also been compiled by [Joseph Powell's group](https://www.garvan.org.au/people/researchers/joseph-powell) that incorporates many of these messages. 
+Note: there are many options we could have used here. An excellent meta-package called [Demuxafy](https://demultiplexing-doublet-detecting-docs.readthedocs.io/en/latest/index.html) has also been compiled by [Joseph Powell's group](https://www.garvan.org.au/people/researchers/joseph-powell) that incorporates many useful methods and software packages. 
 
 ---
 ## Sequencing
